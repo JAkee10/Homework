@@ -18,7 +18,7 @@ if (N > 0)
     while (i < N)
     {
         Console.Write($"{i} ");
-        i++;
+        i += 2;
     }
 }
 else
