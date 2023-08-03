@@ -9,6 +9,22 @@
 using System;
 using static System.Console;
 
+
+
+// double[,] GetArray(int m, int n, int minRange, int maxRange)
+// {
+//     double[,] result = new double[m, n];
+//     for (int i = 0; i < m; i++)
+//     {
+//         for (int j = 0; j < n; j++)
+//         {
+//             Random random = new Random();
+//             result[i, j] = Math.Round(random.NextDouble(), 2) + random.Next(minRange, maxRange + 1);
+//         }
+//     }
+//     return result;
+// }
+
 double[,] GetArray(int m, int n, int minRange, int maxRange)
 {
     double[,] result = new double[m, n];
@@ -17,7 +33,7 @@ double[,] GetArray(int m, int n, int minRange, int maxRange)
         for (int j = 0; j < n; j++)
         {
             Random random = new Random();
-            result[i, j] = Math.Round(random.NextDouble(), 2) + random.Next(minRange, maxRange + 1);
+            result[i, j] = Convert.ToDouble(new Random().Next(-100, 100)) / 10;
         }
     }
     return result;
