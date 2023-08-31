@@ -8,7 +8,8 @@
 
 string GetNumbers(int N)
 {
-    if (N == 1)
+    if (N < 1) return "0";
+    else if (N == 1)
     {
         return "1";
     }
