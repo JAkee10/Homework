@@ -22,7 +22,13 @@ Console.Write($"Введите первое число: ");
 int minNumber = Convert.ToInt32(Console.ReadLine());
 Console.Write($"Введите второе число: ");
 int maxNumber = Convert.ToInt32(Console.ReadLine());
-if (minNumber > maxNumber)
+if (maxNumber < 0 || minNumber < 0) 
+{
+    Console.WriteLine("Введено отрицательное число");
+    maxNumber = 0;
+    minNumber = 0;
+}
+else if (minNumber > maxNumber)
 {
     int temp = minNumber;
     minNumber = maxNumber;
