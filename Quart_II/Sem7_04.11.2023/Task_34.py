@@ -23,15 +23,17 @@ not_enough_phrase = False
 list_of_phrases = stroka.split()
 list_of_syllables = []
 
-vowels_letters = ["а", "о", "е", "у", "и", "ё", "ы", "я", "э"]
+vowels = ["а", "о", "е", "у", "и", "ё", "ы", "я", "э", "ю"]
 
 if len(list_of_phrases) > 2:
     for phrase in list_of_phrases:
-        syllables_count = 0
-        for letter in phrase:
-            if letter in vowels_letters:
-                syllables_count += 1
-        list_of_syllables.append(syllables_count)
+        # syllables_count = 0
+        # for letter in phrase:
+        #     if letter in vowels_letters:
+        #         syllables_count += 1
+        # list_of_syllables.append(syllables_count)
+        
+        list_of_syllables.append(len([letter for letter in phrase if letter in vowels]))
 else:
     not_enough_phrase = True
 
