@@ -1,0 +1,24 @@
+def convert_to_onehot(lst):
+  humans_list = data['whoAmI']
+  onehot_array = []
+  reverse_onehot_array = []
+
+  for el in humans_list:
+    if el == 'human': onehot_array.append(1)
+    else: onehot_array.append(0)
+
+  for el in onehot_array:
+    if el == 1: reverse_onehot_array.append(0)
+    else: reverse_onehot_array.append(1)
+  return(pd.DataFrame({'human': onehot_array, 'robot': reverse_onehot_array}))
+
+import random
+lst = ['robot'] * 10
+lst += ['human'] * 10
+random.shuffle(lst)
+data = pd.DataFrame({'whoAmI':lst})
+# data.head()
+
+
+result = convert_to_onehot(lst)
+result.head()
