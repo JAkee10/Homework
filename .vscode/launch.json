@@ -2,6 +2,27 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Printer",
+            "request": "launch",
+            "mainClass": "Sem_4.Task_3.Printer",
+            "projectName": "Homework_9dc720d8"
+        },
+        {
+            "type": "java",
+            "name": "Printer",
+            "request": "launch",
+            "mainClass": "Sem_4.Task_2.Printer",
+            "projectName": "Homework_9dc720d8"
+        },
+        {
+            "type": "java",
+            "name": "Printer",
+            "request": "launch",
+            "mainClass": "Sem_4.Task_1.Printer",
+            "projectName": "Homework_9dc720d8"
+        },
+        {
             "name": ".NET Core Launch (console)",
             "type": "coreclr",
             "request": "launch",
@@ -13,18 +34,13 @@
             "console": "internalConsole"
         },
         {
-            // Use IntelliSense to find out which attributes exist for C# debugging
-            // Use hover for the description of the existing attributes
-            // For further information visit https://github.com/dotnet/vscode-csharp/blob/main/debugger-launchjson.md
             "name": ".NET Core Launch (console)",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            // If you have changed target frameworks, make sure to update the program path.
             "program": "${workspaceFolder}/18.07.23/Exercise 001/bin/Debug/net6.0/Exercise 001.dll",
             "args": [],
             "cwd": "${workspaceFolder}/18.07.23/Exercise 001",
-            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false
         },
